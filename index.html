@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Vunky Himawan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&family=Poppins:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            animation: {
+              slide: "slide 15s linear infinite",
+              all: "all 0.3s ease-in-out",
+            },
+            keyframes: {
+              slide: {
+                "0%": { transform: "translate3d(0, 0, 0)" },
+                "100%": { transform: "translate3d(-1500px, 0, 0)" },
+              },
+              all: {
+                "0%, 20%": { transform: "translateY(0)" },
+                "100%": { transform: "translateY(-100%)" },
+              },
+            },
+            fontFamily: {
+              poppins: ["Poppins"],
+              montserrat: ["Montserrat"],
+            },
+            colors: {
+              hero: "#FF6000",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="font-poppins">
+    <div class="intro duration-1000 top-0 z-50 w-full h-[100vh] bg-white flex justify-center items-center fixed">
+      <h1 data-text="Welcome..." class="font-bold text-9xl relative">
+        WELCOME...
+      </h1>
+    </div>
+
+    <nav class="autohide group navbar flex z-40 fixed p-9 justify-center items-center w-full left-0 top-0 bg-transparent backdrop-blur-sm border-b-2">
+      <div class="absolute left-32 font-montserrat font-bold uppercase text-3xl hover:text-hero">
+        <a href="#">Vunky</a>
+      </div>
+      <ul>
+        <li class="inline p-10 hover:text-hero"><a href="#about">About</a></li>
+        <li class="inline p-10 hover:text-hero"><a href="#skills">Skills</a></li>
+        <li class="inline p-10 hover:text-hero"><a href="#project">Project</a></li>
+        <li class="inline p-10 hover:text-hero"><a href="#blog">Blog</a></li>
+        <li class="inline p-10 hover:text-hero"><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="flex absolute right-24">
+        <a href="#" class="mx-5 hover:text-hero"><i data-feather="instagram"></i></a>
+        <a href="#" class="mx-5 hover:text-hero"><i data-feather="linkedin"></i></a>
+        <a href="#" class="mx-5 hover:text-hero"><i data-feather="twitter"></i></a>
+      </div>
+    </nav>
+
+    <section class="container mb-10 max-w-full max-h-screen bg-gradient-to-b from-[#c3e1fc] to-white">
+      <main class="flex min-w-full min-h-screen max-w-6xl">
+        <div class="flex flex-col self-center p-10 min-w-[50%] max-w-[50%]">
+          <h1 class="text-7xl">Hii</h1>
+          <h1 class="text-5xl">
+            I'm <span class="text-hero font-bold">Vunky Himawan</span>
+          </h1>
+          <h1 class="text-5xl">
+            a <span class="text-hero font-bold">Web Development</span>
+          </h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque qui
+            sequi odit reprehenderit, sapiente architecto laborum ullam deserunt
+            eligendi iusto quaerat et quibusdam numquam adipisci placeat odio
+            praesentium repudiandae neque?
+          </p>
+          <button class="self-start min-w-[140px] text-white bg-hero rounded-full p-2 hover:bg-hero hover:opacity-90">Let's Start</button>
+        </div>
+        <div class="flex justify-center w-full h-screen z-10">
+          <div class="flex justify-center relative w-full">
+            <img class="grayscale h-[80%] bottom-0 translate-y-[9.8vw]" src="assets/image/DSC_1964-removebg-preview_waifu2x_photo_noise3_copy.png" alt=""/>
+            <span class="flex items-end justify-center -z-10 absolute -translate-x-[0vw] bottom-0 overflow-hidden h-[37vw] w-[37vw]">
+              <div class="shadow-xl rounded-tl-[2vw] translate-y-[2vw] rounded-tr-[8vw] rotate-6 w-[30vw] h-[30vw] bg-gradient-to-br from-[#68ADF7] via-[#F5CCD4] to-[#68ADF7]"></div>
+              <div class="w-[2.5vw] h-[2.5vw] bg-black rounded-full absolute top-0 left-0 translate-x-[6.3vw] border-white border-[0.3vw] bg-transparent translate-y-[9vw]"></div>
+              <div class="w-[10vw] h-[10vw] rounded-tr-full rounded-br-full border-r-[1vw] border-white top-0 right-0 absolute -translate-x-[5vw] -rotate-[35deg] translate-y-[12vw]"></div>
+            </span>
+            <span class="absolute bottom-0 h-full w-full">
+              <div class="animate-bounce w-[2.5vw] h-[2.5vw] absolute border-blue-600 border-[0.3vw] rounded-full top-20 left-20"></div>
+              <div class="animate-bounce w-[2.5vw] h-[2.5vw] absolute border-orange-600 border-[0.3vw] rounded-full right-10 top-0"></div>
+              <div class="animate-bounce w-[2.5vw] h-[2.5vw] absolute border-red-600 border-[0.3vw] rounded-full left-20 top-[30vw]"></div>
+              <div class="animate-bounce w-[2.5vw] h-[2.5vw] absolute border-sky-700 border-[0.3vw] rounded-full top-40 right-20"></div>
+              <div class="animate-bounce w-[2.5vw] h-[2.5vw] absolute border-green-700 border-[0.3vw] rounded-full top-52 left-14"></div>
+              <div class="animate-bounce w-[2.5vw] h-[2.5vw] absolute border-indigo-900 border-[0.3vw] rounded-full top-24 left-80"></div>
+              <div class="animate-bounce w-[2.5vw] h-[2.5vw] absolute border-lime-600 border-[0.3vw] rounded-full bottom-20 right-10"></div>
+            </span>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <section id="about" class=" about container bg-white justify-between h-screen max-w-full max-h-screen p-10 active:bg-black transition duration-1000">
+      <main class="flex justify-between items-center h-full">
+        <div class="ml-10 flex justify-center items-center w-[40%] h-full">
+          <img class="h-full" src="assets/image/DSC09725_copy.jpg" alt="" />
+        </div>
+        <div class="flex justify-center items-center relative w-2/4 h-full">
+          <div class="absolute -left-[28vw] -top-[3.9vw]">
+            <h1 class="text-[10vw] uppercase tracking-widest">About Me</h1>
+          </div>
+          <div class="flex flex-col justify-center h-full max-h-full max-w-[80%]">
+            <p class="mt-16 indent-8">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              quia dignissimos inventore laborum hic quaerat aperiam laudantium
+              laboriosam. Harum accusantium enim esse, ex sequi similique
+              necessitatibus molestiae corporis, suscipit, soluta ratione error
+              ipsam libero earum porro voluptatibus pariatur vel? Nesciunt
+              officiis, tempore excepturi blanditiis amet illum possimus
+              assumenda odit consectetur!
+            </p>
+            <p class="mt-6 indent-8">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Perspiciatis nihil, unde consequuntur incidunt sint quod
+              recusandae tempore architecto dicta nostrum quidem eos voluptas,
+              nemo autem magni cupiditate, tempora ut molestiae.
+            </p>
+            <p class="my-6 indent-8">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ad,
+              officia iure explicabo quo odio?
+            </p>
+            <button class="self-start min-w-[140px] text-white bg-hero rounded-full p-2 hover:bg-hero hover:opacity-90">Download CV</button>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <section id="skills" class="skills flex justify-center items-center container bg-black text-white w-full h-screen max-w-full max-h-max p-7 transition duration-1000">
+      <main class="flex flex-col justify-center items-center">
+        <div class="flex flex-col items-center">
+          <h1 class="text-4xl uppercase font-bold">My Skills</h1>
+          <h3 class="text-xl">I have experience with these technologies</h3>
+        </div>
+        <ul class="list-none grid grid-cols-3 gap-5 justify-center items-center mt-5">
+          <li class="icon transition duration-1000 flex justify-center items-center bg-[#161616] shadow-[0_1px_2px_0_rgb(189,189,189,0.75)] w-[150px] h-[150px] order-6"><img class="w-[100px] h-[100px]" src="assets/svg/13.svg" alt=""/></li>
+          <li class="icon transition duration-1000 flex justify-center items-center bg-[#161616] shadow-[0_1px_2px_0_rgb(189,189,189,0.75)] w-[150px] h-[150px] order-5"><img class="w-[100px] h-[100px]" src="assets/svg/15.svg" alt=""/></li>
+          <li class="icon transition duration-1000 flex justify-center items-center bg-[#161616] shadow-[0_1px_2px_0_rgb(189,189,189,0.75)] w-[150px] h-[150px] order-4"><img class="w-[100px] h-[100px]" src="assets/svg/7.svg" alt=""/></li>
+          <li class="icon transition duration-1000 flex justify-center items-center bg-[#161616] shadow-[0_1px_2px_0_rgb(189,189,189,0.75)] w-[150px] h-[150px] order-3"><img class="w-[100px] h-[100px]" src="assets/svg/4.svg" alt=""/></li>
+          <li class="icon transition duration-1000 flex justify-center items-center bg-[#161616] shadow-[0_1px_2px_0_rgb(189,189,189,0.75)] w-[150px] h-[150px] order-2"><img class="w-[100px] h-[100px]" src="assets/svg/3.svg" alt=""/></li>
+          <li class="icon transition duration-1000 flex justify-center items-center bg-[#161616] shadow-[0_1px_2px_0_rgb(189,189,189,0.75)] w-[150px] h-[150px] order-1"><img class="w-[100px] h-[100px]" src="assets/svg/2.svg" alt=""/></li>
+        </ul>
+      </main>
+    </section>
+
+    <section id="project" class="project container transition duration-1000 flex justify-center items-center w-full h-screen max-w-full max-h-screen">
+      <main class="flex flex-col p-10 justify-center items-center">
+        <div class="flex flex-col justify-center items-center my-10">
+          <h1 class="font-bold uppercase text-2xl">Recent Projects</h1>
+          <div class="w-32 border-hero border-t-4 border-black"></div>
+        </div>
+        <div class="grid gap-6 grid-cols-3 grid-rows-2">
+          <div class="flex relative cursor-pointer w-72 h-44 bg-hero group">
+            <span class="flex justify-center items-center w-full h-full absolute bg-transparent transition duration-800 group-hover:bg-hero scale-50 group-hover:scale-100 invisible group-hover:visible"><i class="text-white" data-feather="zoom-in"></i></span>
+            <img class="w-full" src="assets/image/DSC09725.jpg" alt="" />
+            <span class="flex justify-center items-center w-full absolute h-10 z-10 opacity-70 self-end bg-hero"><span class="text-xl text-white opacity-100 uppercase">Title</span></span>
+          </div>
+          <div class="flex relative cursor-pointer w-72 h-44 bg-hero group">
+            <span class="flex justify-center items-center w-full h-full absolute bg-transparent transition duration-800 group-hover:bg-hero scale-50 group-hover:scale-100 invisible group-hover:visible"><i class="text-white" data-feather="zoom-in"></i></span>
+            <img class="w-full" src="assets/image/DSC09725.jpg" alt="" />
+            <span class="flex justify-center items-center w-full absolute h-10 z-10 opacity-70 self-end bg-hero"><span class="text-xl text-white opacity-100 uppercase">Title</span></span>
+          </div>
+          <div class="flex relative cursor-pointer w-72 h-44 bg-hero group">
+            <span class="flex justify-center items-center w-full h-full absolute bg-transparent transition duration-800 group-hover:bg-hero scale-50 group-hover:scale-100 invisible group-hover:visible"><i class="text-white" data-feather="zoom-in"></i></span>
+            <img class="w-full" src="assets/image/DSC09725.jpg" alt="" />
+            <span class="flex justify-center items-center w-full absolute h-10 z-10 opacity-70 self-end bg-hero"><span class="text-xl text-white opacity-100 uppercase">Title</span></span>
+          </div>
+          <div class="flex relative cursor-pointer w-72 h-44 bg-hero group">
+            <span class="flex justify-center items-center w-full h-full absolute bg-transparent transition duration-800 group-hover:bg-hero scale-50 group-hover:scale-100 invisible group-hover:visible"><i class="text-white" data-feather="zoom-in"></i></span>
+            <img class="w-full" src="assets/image/DSC09725.jpg" alt="" />
+            <span class="flex justify-center items-center w-full absolute h-10 z-10 opacity-70 self-end bg-hero"><span class="text-xl text-white opacity-100 uppercase">Title</span></span>
+          </div>
+          <div class="flex relative cursor-pointer w-72 h-44 bg-hero group">
+            <span class="flex justify-center items-center w-full h-full absolute bg-transparent transition duration-800 group-hover:bg-hero scale-50 group-hover:scale-100 invisible group-hover:visible"><i class="text-white" data-feather="zoom-in"></i></span>
+            <img class="w-full" src="assets/image/DSC09725.jpg" alt="" />
+            <span class="flex justify-center items-center w-full absolute h-10 z-10 opacity-70 self-end bg-hero"><span class="text-xl text-white opacity-100 uppercase">Title</span></span>
+          </div>
+          <div class="flex relative cursor-pointer w-72 h-44 bg-hero group">
+            <span class="flex justify-center items-center w-full h-full absolute bg-transparent transition duration-800 group-hover:bg-hero scale-50 group-hover:scale-100 invisible group-hover:visible"><i class="text-white" data-feather="zoom-in"></i></span>
+            <img class="w-full" src="assets/image/DSC09725.jpg" alt="" />
+            <span class="flex justify-center items-center w-full absolute h-10 z-10 opacity-70 self-end bg-hero"><span class="text-xl text-white opacity-100 uppercase">Title</span></span>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <section id="blog" class="blog transition duration-1000 text-white bg-black flex justify-center items-center container w-full h-screen max-w-full max-h-screen">
+      <main class="flex flex-col justify-center items-center p-10">
+        <div class="flex flex-col justify-center items-center p-4 max-w-full max-h-screen">
+          <h1 class="text-2xl font-bold uppercase">Recent Posts</h1>
+          <div class="w-28 border-t-4 border-hero"></div>
+        </div>
+        <div class="p-5 grid grid-cols-3 gap-10 items-center my-5">
+          <div class="box-blog transition duration-1000 flex flex-col shadow-xl rounded-t-xl p-5 items-center w-72 h-[24rem] bg-[#161616]">
+            <h1 class="font-bold text-xl self-start hover:underline">
+              <a href="#">Title Article</a>
+            </h1>
+            <div class="flex self-start my-1 justify-center items-center">
+              <i class="opacity-50 mr-2" data-feather="calendar"></i>
+              <span>YYYY-MM-DD</span>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. In illum
+              consequatur eos rem voluptatum fuga consectetur maiores magni quos
+              repellendus, tempora alias dolorum, quas numquam consequuntur
+              sint. Eligendi, omnis explicabo.
+            </p>
+            <button class="bg-hero w-32 h-9 rounded-xl text-white hover:bg-hero hover:opacity-80 my-4">See More</button>
+          </div>
+          <div class="box-blog transition duration-1000 flex flex-col shadow-xl rounded-t-xl p-5 items-center w-72 h-[24rem] bg-gray-200">
+            <h1 class="font-bold text-xl self-start hover:underline">
+              <a href="#">Title Article</a>
+            </h1>
+            <div class="flex self-start my-1 justify-center items-center">
+              <i class="opacity-50 mr-2" data-feather="calendar"></i>
+              <span>YYYY-MM-DD</span>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. In illum
+              consequatur eos rem voluptatum fuga consectetur maiores magni quos
+              repellendus, tempora alias dolorum, quas numquam consequuntur
+              sint. Eligendi, omnis explicabo.
+            </p>
+            <button class="bg-hero w-32 h-9 rounded-xl text-white hover:bg-hero hover:opacity-80 my-4">See More</button>
+          </div>
+          <div class="box-blog transition duration-1000 flex flex-col shadow-xl rounded-t-xl p-5 items-center w-72 h-[24rem] bg-gray-200">
+            <h1 class="font-bold text-xl self-start hover:underline">
+              <a href="#">Title Article</a>
+            </h1>
+            <div class="flex self-start my-1 justify-center items-center">
+              <i class="opacity-50 mr-2" data-feather="calendar"></i>
+              <span>YYYY-MM-DD</span>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. In illum
+              consequatur eos rem voluptatum fuga consectetur maiores magni quos
+              repellendus, tempora alias dolorum, quas numquam consequuntur
+              sint. Eligendi, omnis explicabo.
+            </p>
+            <button class="bg-hero w-32 h-9 rounded-xl text-white hover:bg-hero hover:opacity-80 my-4">See More</button>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <script>
+      feather.replace();
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>
