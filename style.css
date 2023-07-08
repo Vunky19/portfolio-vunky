@@ -1,4 +1,4 @@
-.intro h1 {
+/* .intro h1 {
   color: transparent;
   -webkit-text-stroke: 2px #ff6000;
 }
@@ -15,7 +15,8 @@
   overflow: hidden;
   animation: animate 6s linear;
   text-transform: uppercase;
-}
+} */
+
 .scrolled-down{
   transform:translateY(-100%); 
   transition: all 1s ease-in-out;
