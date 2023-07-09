@@ -122,7 +122,7 @@ $(document).ready(function () {
   $(this).scrollTop(0)
 })
 
-window.addEventListener('wheel', (event) => {
+document.addEventListener('wheel', (event) => {
   if (intro.classList.contains('flex')) {
     let scroll = window.scrollY;
     let scrollY = event.deltaY;
