@@ -194,7 +194,7 @@ if (window.innerWidth >= 1024) {
   cnt2.classList.replace('absolute', 'hidden');
   aboutSec.classList.remove('hidden');
   skills.classList.remove('hidden');
-  project.classList.remove('hidden');
+  /* project.classList.remove('hidden'); */
   blog.classList.remove('hidden');
   landing.classList.remove('fixed', 'z-40');
 }
