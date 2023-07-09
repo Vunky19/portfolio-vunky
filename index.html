@@ -44,10 +44,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="body font-poppins h-[1000vw] w-full">
-      <div class="intro z-50 fixed w-full h-screen flex flex-col overflow-hidden">
+      <div class="intro hidden z-50 fixed w-full h-screen flex flex-col overflow-hidden">
         <div class="kotak1 w-full h-2/4 bg-[#C3EDC0] transition duration-1000 translate-y-[-5%]"></div>
         <div class="kotak2 w-full h-2/4 bg-[#C3EDC0] transition duration-1000 translate-y-[5%]"></div>
-        <div class="box w-full h-[2.3rem] absolute flex top-[47.2vw] border-2 border-black">
+        <div class="box w-full h-[6vh] box-border absolute flex top-[47vh]">
           <span class="kotak3 w-full bg-transparent transition duration-[2s] flex overflow-hidden">
             <span class="kotak5 w-full bg-[#C3EDC0] translate-x-[-0] transition duration-[0.5s]"></span>
           </span>
@@ -56,41 +56,57 @@
           </span>
         </div>
       </div>
-    <!-- <div class="intro duration-1000 top-0 z-50 w-full h-[100vh] bg-white flex justify-center items-center fixed">
-      <h1 data-text="Welcome..." class="font-bold text-9xl relative">
-        WELCOME...
-      </h1>
-    </div> -->
 
-    <nav class="autohide group navbar flex z-30 fixed p-9 justify-center items-center w-full left-0 top-0 bg-transparent backdrop-blur-sm border-b-2">
-      <div class="absolute left-32 font-montserrat font-bold uppercase text-3xl hover:text-hero">
+    <nav class="autohide group navbar flex z-50 fixed p-9 justify-center items-center w-full max-w-full left-0 top-0 backdrop-blur-lg border-2">
+      <div class="absolute left-32 font-montserrat font-bold uppercase text-3xl hover:text-hero max-lg:relative max-lg:left-0">
         <a href="#">Vunky</a>
       </div>
-      <ul>
+      <ul class="max-lg:hidden">
         <li class="inline p-10 hover:text-hero"><a href="#about">About</a></li>
         <li class="inline p-10 hover:text-hero"><a href="#skills">Skills</a></li>
         <li class="inline p-10 hover:text-hero"><a href="#project">Project</a></li>
         <li class="inline p-10 hover:text-hero"><a href="#blog">Blog</a></li>
         <li class="inline p-10 hover:text-hero"><a href="#contact">Contact</a></li>
       </ul>
-      <div class="flex absolute right-24">
+      <div class="flex absolute right-24 max-lg:hidden">
         <a href="#" class="mx-5 hover:text-hero"><i data-feather="instagram"></i></a>
         <a href="#" class="mx-5 hover:text-hero"><i data-feather="linkedin"></i></a>
         <a href="#" class="mx-5 hover:text-hero"><i data-feather="twitter"></i></a>
       </div>
+      <div class="menu hidden group transition duration-1000 max-lg:block max-lg:self-center max-lg:right-10 max-lg:absolute">
+        <i class="hamburger-menu transition duration-1000 h-[50px] text-3xl w-[50px]" data-feather="menu"></i>
+        <i class="x-menu h-[50px] text-3xl w-[50px] transition duration-1000 hidden" data-feather="x"></i>
+      </div>
     </nav>
 
-    <section class="landing container z-40 fixed mb-10 max-w-full max-h-screen bg-gradient-to-b from-[#c3e1fc] to-white">
-      <main class="flex min-w-full min-h-screen max-w-6xl">
-        <div class="flex flex-col self-center p-10 min-w-[50%] max-w-[50%]">
-          <h1 class="text-7xl">Hii</h1>
-          <h1 class="text-5xl">
+    <nav class="backdown-menu mt-28 z-30 fixed w-full translate-y-[-120%] transition duration-1000 overflow-auto max-w-full h-fit backdrop-blur-lg max-h-screen">
+      <div class="flex flex-col items-center">
+          <ul class="w-full h-full">
+            <li class="p-10 text-center text-6xl hover:text-hero max-sm:text-4xl"><a href="#about">About</a></li>
+            <li class="p-10 text-center text-6xl hover:text-hero max-sm:text-4xl"><a href="#skills">Skills</a></li>
+            <li class="p-10 text-center text-6xl hover:text-hero max-sm:text-4xl"><a href="#project">Project</a></li>
+            <li class="p-10 text-center text-6xl hover:text-hero max-sm:text-4xl"><a href="#blog">Blog</a></li>
+            <li class="p-10 text-center text-6xl hover:text-hero max-sm:text-4xl"><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="flex my-5 text-7xl h-[70px] w-full justify-center items-center">
+            <a href="#" class="mx-5 hover:text-hero"><i class="h-[40px] w-[40px] opacity-50 text-3xl max-sm:text-xl" data-feather="instagram"></i></a>
+            <a href="#" class="mx-5 hover:text-hero"><i class="h-[40px] w-[40px] opacity-50 text-3xl max-sm:text-xl" data-feather="linkedin"></i></a>
+            <a href="#" class="mx-5 hover:text-hero"><i class="h-[40px] w-[40px] opacity-50 text-3xl max-sm:text-xl" data-feather="twitter"></i></a>
+          </div>
+      </div>
+    </nav>
+
+    <section class="landing max-sm:max-h-fit max-md:max-h-fit border-4 border-black overflow-hidden container z-40 fixed mb-10 max-w-full max-h-screen bg-gradient-to-b from-[#c3e1fc] to-white">
+      <main class="flex relative min-w-full justify-evenly min-h-screen max-w-6xl max-lg:flex-col">
+        <div class="flex flex-col self-center p-10 min-w-[50%]">
+          <h1 class="text-7xl mb-5 max-lg:mt-20">Hii</h1>
+          <h1 class="text-5xl max-[580px]:text-4xl max-[450px]:text-3xl max-[390px]:text-2xl">
             I'm <span class="text-hero font-bold">Vunky Himawan</span>
           </h1>
-          <h1 class="text-5xl">
+          <h1 class="text-5xl mb-5 max-[580px]:text-4xl max-[450px]:text-3xl max-[390px]:text-2xl">
             a <span class="text-hero font-bold">Web Development</span>
           </h1>
-          <p>
+          <p class="mb-5">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque qui
             sequi odit reprehenderit, sapiente architecto laborum ullam deserunt
             eligendi iusto quaerat et quibusdam numquam adipisci placeat odio
@@ -98,39 +114,44 @@
           </p>
           <button class="self-start min-w-[140px] text-white bg-hero rounded-full p-2 hover:bg-hero hover:opacity-90">Let's Start</button>
         </div>
-        <div class="flex justify-center w-full h-screen z-10">
+        <div class="flex justify-center w-full h-screen top-0 z-10">
           <div class="flex justify-center relative w-full">
-            <img class="grayscale h-[80%] bottom-0 translate-y-[9.8vw]" src="assets/image/DSC_1964-removebg-preview_waifu2x_photo_noise3_copy.png" alt=""/>
-            <span class="flex items-end justify-center -z-10 absolute -translate-x-[0vw] bottom-0 overflow-hidden h-[37vw] w-[37vw]">
-              <div class="shadow-xl rounded-tl-[2vw] translate-y-[2vw] rounded-tr-[8vw] rotate-6 w-[30vw] h-[30vw] bg-gradient-to-br from-[#68ADF7] via-[#F5CCD4] to-[#68ADF7]"></div>
-              <div class="w-[2.5vw] h-[2.5vw] bg-black rounded-full absolute top-0 left-0 translate-x-[6.3vw] border-white border-[0.3vw] bg-transparent translate-y-[9vw]"></div>
-              <div class="w-[10vw] h-[10vw] rounded-tr-full rounded-br-full border-r-[1vw] border-white top-0 right-0 absolute -translate-x-[5vw] -rotate-[35deg] translate-y-[12vw]"></div>
+            <img class="object-cover max-lg:bottom-[17rem] max-md:bottom-[-20rem] max-md:translate-y-[-5vh] grayscale absolute w-full h-full bottom-0 translate-y-[9.8vw]" src="assets/image/DSC_1964-removebg-preview_waifu2x_photo_noise3_copy.png" alt=""/>
+            <span class="flex items-end justify-center -z-10 absolute top-0 overflow-hidden w-full h-full">
+              <div class="shadow-xl max-lg:w-full max-lg:h-[70vh] max-lg:translate-y-[-13rem] max-lg:rounded-[10vw] max-md:translate-y-[20vh] max-md:rounded-tl-[9vw] absolute rounded-tl-[2vw] translate-y-[2vw] rounded-tr-[8vw] rotate-6 w-[30vw] h-[50vh] bg-gradient-to-br from-[#68ADF7] via-[#F5CCD4] to-[#68ADF7]"></div>
+              <div class="w-[2.5vw] h-[2.5vw] max-lg:top-[5rem] max-lg:left-6 max-lg:w-[14vw] max-lg:h-[14vw] max-lg:border-[1.2vw] max-sm:top-[22rem] max-sm:left-4 max-md:top-[22rem] max-md:translate-y-[21.5vh] max-md:translate-x-[10.3vw] bg-black rounded-full absolute top-0 left-0 translate-x-[6.3vw] border-white border-[0.3vw] bg-transparent translate-y-[9vw]"></div>
             </span>
-            <span class="absolute bottom-0 h-full w-full">
-              <div class="animate-bounce w-[2.5vw] h-[2.5vw] absolute border-blue-600 border-[0.3vw] rounded-full top-20 left-20"></div>
-              <div class="animate-bounce w-[2.5vw] h-[2.5vw] absolute border-orange-600 border-[0.3vw] rounded-full right-10 top-0"></div>
-              <div class="animate-bounce w-[2.5vw] h-[2.5vw] absolute border-red-600 border-[0.3vw] rounded-full left-20 top-[30vw]"></div>
-              <div class="animate-bounce w-[2.5vw] h-[2.5vw] absolute border-sky-700 border-[0.3vw] rounded-full top-40 right-20"></div>
-              <div class="animate-bounce w-[2.5vw] h-[2.5vw] absolute border-green-700 border-[0.3vw] rounded-full top-52 left-14"></div>
-              <div class="animate-bounce w-[2.5vw] h-[2.5vw] absolute border-indigo-900 border-[0.3vw] rounded-full top-24 left-80"></div>
-              <div class="animate-bounce w-[2.5vw] h-[2.5vw] absolute border-lime-600 border-[0.3vw] rounded-full bottom-20 right-10"></div>
+            <span class="absolute bottom-0 -z-10 h-full w-full">
+              <div class="max-lg:w-[17vw] max-lg:h-[17vw] max-lg:border-[1.5vw] w-[2.5vw] h-[2.5vw] absolute border-blue-600 border-[0.3vw] rounded-full top-20 left-20 bg-transparent shadow-2xl"></div>
+              <div class="max-lg: max-lg:w-[14vw] max-lg:h-[14vw] max-lg:border-[1.5vw] w-[2.5vw] h-[2.5vw] absolute bg-transparent shadow-2xl border-orange-600 border-[0.3vw] rounded-full right-10 top-0"></div>
+              <div class="max-lg:top-[28vh] max-lg:w-[20vw] max-lg:h-[20vw] max-lg:border-[1.5vw] w-[2.5vw] h-[2.5vw] absolute bg-transparent shadow-2xl border-red-600 border-[0.3vw] rounded-full left-20 top-[30vw]"></div>
+              <div class="max-lg:top-[23vh] max-lg:w-[15vw] max-lg:h-[15vw] max-lg:border-[1.5vw] w-[2.5vw] h-[2.5vw] absolute bg-transparent shadow-2xl border-sky-700 border-[0.3vw] rounded-full top-40 right-20"></div>
+              <div class="max-lg:top-[16vh] max-lg:left-[2vw] max-lg:w-[12vw] max-lg:h-[12vw] max-lg:border-[1.5vw] w-[2.5vw] h-[2.5vw] absolute bg-transparent shadow-2xl border-green-700 border-[0.3vw] rounded-full top-52 left-14"></div>
+              <div class="max-lg:top-[3vh] max-lg:w-[15vw] max-lg:h-[15vw] max-lg:border-[1.5vw] w-[2.5vw] h-[2.5vw] absolute bg-transparent shadow-2xl border-indigo-900 border-[0.3vw] rounded-full top-24 left-80"></div>
+              <div class="max-lg:hidden w-[2.5vw] h-[2.5vw] absolute bg-transparent shadow-2xl border-lime-600 border-[0.3vw] rounded-full bottom-20 right-10"></div>
             </span>
           </div>
         </div>
       </main>
     </section>
 
-    <section id="about" class=" about hidden container bg-white justify-between h-screen max-w-full max-h-screen p-10 active:bg-black transition duration-1000">
-      <main class="flex justify-between items-center h-full">
-        <div class="ml-10 flex justify-center items-center w-[40%] h-full">
-          <img class="h-full" src="assets/image/DSC09725_copy.jpg" alt="" />
+    <!-- hidden -->
+    <section id="about" class="about max-md:h-[70vh] hidden container bg-white justify-between h-screen max-w-full max-h-screen transition duration-1000">
+      <main class="flex max-md:flex-col p-6 relative justify-center items-center h-full">
+        <div class="hidden text-center mb-6 max-md:flex max-md:flex-col justify-center items-center w-full">
+          <h1 class="uppercase font-bold text-5xl">About Me</h1>
+          <div class="w-44 border-t-4 border-hero text-center"></div>
         </div>
-        <div class="flex justify-center items-center relative w-2/4 h-full">
-          <div class="absolute -left-[28vw] -top-[3.9vw]">
-            <h1 class="text-[10vw] uppercase tracking-widest">About Me</h1>
+        <div class="flex justify-center items-center w-full h-full max-md:h-[20vh]">
+          <img class="object-cover h-full max-md:w-full" src="assets/image/DSC09725_copy.jpg" alt="" />
+        </div>
+        <div class="flex flex-col justify-center items-center relative w-2/4 h-full max-md:w-full ">
+          <div class="flex flex-col justify-center items-center font-bold w-full max-md:hidden">
+            <h1 class="text-7xl self-center uppercase">About Me</h1>
+            <div class="w-64 border-t-4 border-hero"></div>
           </div>
-          <div class="flex flex-col justify-center h-full max-h-full max-w-[80%]">
-            <p class="mt-16 indent-8">
+          <div class="flex flex-col justify-center h-full max-h-full w-full">
+            <p class="max-md:text-2xl indent-8">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
               quia dignissimos inventore laborum hic quaerat aperiam laudantium
               laboriosam. Harum accusantium enim esse, ex sequi similique
@@ -139,13 +160,13 @@
               officiis, tempore excepturi blanditiis amet illum possimus
               assumenda odit consectetur!
             </p>
-            <p class="mt-6 indent-8">
+            <p class="max-md:text-2xl mt-6 indent-8">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Perspiciatis nihil, unde consequuntur incidunt sint quod
               recusandae tempore architecto dicta nostrum quidem eos voluptas,
               nemo autem magni cupiditate, tempora ut molestiae.
             </p>
-            <p class="my-6 indent-8">
+            <p class="max-md:text-2xl my-6 indent-8">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ad,
               officia iure explicabo quo odio?
             </p>
