@@ -122,66 +122,79 @@ $(document).ready(function () {
   $(this).scrollTop(0)
 })
 
-document.addEventListener('wheel', (event) => {
-  if (intro.classList.contains('flex')) {
-    let scroll = window.scrollY;
-    let scrollY = event.deltaY;
-    let docHeight = document.body.offsetHeight;
-    let winHeight = window.innerHeight;
-    let scrollPercent = scroll / (docHeight - winHeight);
-    let scrollPercentRounded = Math.round(scrollPercent * 100);
+if (window.innerWidth >= 1024) {
 
-    document.title = scrollPercentRounded;
+  document.addEventListener('wheel', (event) => {
+    if (intro.classList.contains('flex')) {
+      let scroll = window.scrollY;
+      let scrollY = event.deltaY;
+      let docHeight = document.body.offsetHeight;
+      let winHeight = window.innerHeight;
+      let scrollPercent = scroll / (docHeight - winHeight);
+      let scrollPercentRounded = Math.round(scrollPercent * 100);
 
-    if (scrollY > 0) {
-      x = (0 + scrollPercentRounded);
-      if (scrollPercentRounded >= 0 && scrollPercentRounded <= 100) {
-        if (scrollPercentRounded === 100) {
-          bdy.classList.remove('h-[1000vw]', 'w-full');
-          bdy.classList.add('overflow-hidden');
+      document.title = scrollPercentRounded;
 
-          setTimeout(() => {
-            $("html, body").scrollTop(0);
-          }, 200)
+      if (scrollY > 0) {
+        x = (0 + scrollPercentRounded);
+        if (scrollPercentRounded >= 0 && scrollPercentRounded <= 100) {
+          if (scrollPercentRounded === 100) {
+            bdy.classList.remove('h-[1000vw]', 'w-full');
+            bdy.classList.add('overflow-hidden');
 
-          cnt2.classList.replace('absolute', 'hidden');
-          setTimeout(() => {
-            landing.classList.remove('fixed', 'z-40');
-            bdy.classList.remove('overflow-hidden');
-            aboutSec.classList.remove('hidden');
-            skills.classList.remove('hidden');
-            project.classList.remove('hidden');
-            blog.classList.remove('hidden');
-            kotak1.style.transform = `translateY(-100%)`;
-            kotak2.style.transform = `translateY(100%)`;
-            el_autohide.classList.add('scrolled-up');
-          }, 1000);
+            setTimeout(() => {
+              $("html, body").scrollTop(0);
+            }, 200)
 
-          setTimeout(() => {
-            intro.classList.replace('flex', 'hidden');
-          }, 2000)
-        } else if (scrollPercentRounded === 0) {
+            cnt2.classList.replace('absolute', 'hidden');
+            setTimeout(() => {
+              landing.classList.remove('fixed', 'z-40');
+              bdy.classList.remove('overflow-hidden');
+              aboutSec.classList.remove('hidden');
+              skills.classList.remove('hidden');
+              project.classList.remove('hidden');
+              blog.classList.remove('hidden');
+              kotak1.style.transform = `translateY(-100%)`;
+              kotak2.style.transform = `translateY(100%)`;
+              el_autohide.classList.add('scrolled-up');
+            }, 1000);
+
+            setTimeout(() => {
+              intro.classList.replace('flex', 'hidden');
+            }, 2000)
+          } else if (scrollPercentRounded === 0) {
+            kotak5.style.transform = `translateX(${(x)}%)`;
+            kotak6.style.transform = `translateX(-${(x)}%)`;
+          } else {
+            document.title = 'Oke';
+            kotak5.style.transform = `translateX(${(x)}%)`;
+            kotak6.style.transform = `translateX(-${(x)}%)`;
+          }
+        }
+      } else if (scrollY < 0) {
+        console.log(x)
+        if (x >= 1) {
+          x = (0 + scrollPercentRounded - 1);
+        }
+        if (scrollPercentRounded > 0 && scrollPercentRounded < 100) {
+          scrollPercentRounded--;
           kotak5.style.transform = `translateX(${(x)}%)`;
           kotak6.style.transform = `translateX(-${(x)}%)`;
-        } else {
-          document.title = 'Oke';
+        } else if (scrollPercentRounded === 0) {
           kotak5.style.transform = `translateX(${(x)}%)`;
           kotak6.style.transform = `translateX(-${(x)}%)`;
         }
       }
-    } else if (scrollY < 0) {
-      console.log(x)
-      if (x >= 1) {
-        x = (0 + scrollPercentRounded - 1);
-      }
-      if (scrollPercentRounded > 0 && scrollPercentRounded < 100) {
-        scrollPercentRounded--;
-        kotak5.style.transform = `translateX(${(x)}%)`;
-        kotak6.style.transform = `translateX(-${(x)}%)`;
-      } else if (scrollPercentRounded === 0) {
-        kotak5.style.transform = `translateX(${(x)}%)`;
-        kotak6.style.transform = `translateX(-${(x)}%)`;
-      }
     }
-  }
-});
+  });
+} else {
+  $("html, body").scrollTop(0);
+  intro.classList.replace('flex', 'hidden');
+  bdy.classList.remove('h-[1000vw]', 'w-full');
+  cnt2.classList.replace('absolute', 'hidden');
+  aboutSec.classList.remove('hidden');
+  skills.classList.remove('hidden');
+  project.classList.remove('hidden');
+  blog.classList.remove('hidden');
+  landing.classList.remove('fixed', 'z-40');
+}
