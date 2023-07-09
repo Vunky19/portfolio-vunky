@@ -193,7 +193,7 @@ if (window.innerWidth >= 1024) {
   bdy.classList.remove('h-[1000vw]', 'w-full');
   cnt2.classList.replace('absolute', 'hidden');
   aboutSec.classList.remove('hidden');
-  skills.classList.remove('hidden');
+  /* skills.classList.remove('hidden'); */
   /* project.classList.remove('hidden'); */
   blog.classList.remove('hidden');
   landing.classList.remove('fixed', 'z-40');
