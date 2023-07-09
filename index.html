@@ -57,7 +57,7 @@
         </div>
       </div>
 
-    <nav class="autohide group navbar flex z-50 fixed p-9 justify-center items-center w-full max-w-full left-0 top-0 backdrop-blur-lg border-2">
+    <nav class="autohide max-lg:h-16 group navbar flex z-50 fixed p-9 justify-center items-center w-full max-w-full left-0 top-0 backdrop-blur-lg border-b-2">
       <div class="absolute left-32 font-montserrat font-bold uppercase text-3xl hover:text-hero max-lg:relative max-lg:left-0">
         <a href="#">Vunky</a>
       </div>
@@ -79,7 +79,7 @@
       </div>
     </nav>
 
-    <nav class="backdown-menu mt-28 z-30 fixed w-full translate-y-[-120%] transition duration-1000 overflow-auto max-w-full h-fit backdrop-blur-lg max-h-screen">
+    <nav class="backdown-menu mt-16 z-30 fixed w-full translate-y-[-120%] transition duration-1000 overflow-auto max-w-full h-fit backdrop-blur-lg max-h-screen">
       <div class="flex flex-col items-center">
           <ul class="w-full h-full">
             <li class="p-10 text-center text-6xl hover:text-hero max-sm:text-4xl"><a href="#about">About</a></li>
@@ -96,7 +96,7 @@
       </div>
     </nav>
 
-    <section class="landing max-sm:max-h-fit max-md:max-h-fit border-4 border-black overflow-hidden container z-40 fixed mb-10 max-w-full max-h-screen bg-gradient-to-b from-[#c3e1fc] to-white">
+    <section class="landing max-xl:bg-gradient-to-b max-lg:min-h-fit overflow-hidden container z-40 fixed mb-10 max-w-full max-h-screen bg-gradient-to-b from-[#c3e1fc] to-white">
       <main class="flex relative min-w-full justify-evenly min-h-screen max-w-6xl max-lg:flex-col">
         <div class="flex flex-col self-center p-10 min-w-[50%]">
           <h1 class="text-7xl mb-5 max-lg:mt-20">Hii</h1>
@@ -234,60 +234,60 @@
       </main>
     </section>
 
-    <section id="blog" class="blog hidden transition duration-1000 text-white bg-black flex justify-center items-center container w-full h-screen max-w-full max-h-screen">
-      <main class="flex flex-col justify-center items-center p-10">
+    <section id="blog" class="blog transition duration-1000 text-white bg-black flex justify-center items-center container w-full h-screen max-w-full max-h-screen">
+      <main class="flex w-full flex-col justify-center items-center p-10">
         <div class="flex flex-col justify-center items-center p-4 max-w-full max-h-screen">
           <h1 class="text-2xl font-bold uppercase">Recent Posts</h1>
           <div class="w-28 border-t-4 border-hero"></div>
         </div>
-        <div class="p-5 grid grid-cols-3 gap-10 items-center my-5">
-          <div class="box-blog transition duration-1000 flex flex-col shadow-xl rounded-t-xl p-5 items-center w-72 h-[24rem] bg-[#161616]">
-            <h1 class="font-bold text-xl self-start hover:underline">
+        <div class="p-5 grid max-lg:grid-cols-1 grid-cols-3 gap-10 items-center my-5">
+          <div class="box-blog max-lg:w-full  transition  duration-1000 flex flex-col shadow-xl rounded-t-xl p-5 items-center w-72 h-[24rem] bg-[#161616]">
+            <h1 class="font-bold text-xl max-lg:text-4xl self-start hover:underline">
               <a href="#">Title Article</a>
             </h1>
             <div class="flex self-start my-1 justify-center items-center">
               <i class="opacity-50 mr-2" data-feather="calendar"></i>
               <span>YYYY-MM-DD</span>
             </div>
-            <p>
+            <p class="max-lg:text-xl max-lg:mt-5">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. In illum
               consequatur eos rem voluptatum fuga consectetur maiores magni quos
               repellendus, tempora alias dolorum, quas numquam consequuntur
               sint. Eligendi, omnis explicabo.
             </p>
-            <button class="bg-hero w-32 h-9 rounded-xl text-white hover:bg-hero hover:opacity-80 my-4">See More</button>
+            <button class="bg-hero max-lg:mt-14 w-32 h-9 rounded-xl text-white hover:bg-hero hover:opacity-80 my-4">See More</button>
           </div>
-          <div class="box-blog transition duration-1000 flex flex-col shadow-xl rounded-t-xl p-5 items-center w-72 h-[24rem] bg-[#161616]">
-            <h1 class="font-bold text-xl self-start hover:underline">
+          <div class="box-blog max-lg:w-full  transition duration-1000 flex flex-col shadow-xl rounded-t-xl p-5 items-center w-72 h-[24rem] bg-[#161616]">
+            <h1 class="font-bold text-xl max-lg:text-4xl self-start hover:underline">
               <a href="#">Title Article</a>
             </h1>
             <div class="flex self-start my-1 justify-center items-center">
               <i class="opacity-50 mr-2" data-feather="calendar"></i>
               <span>YYYY-MM-DD</span>
             </div>
-            <p>
+            <p class="max-lg:text-xl max-lg:mt-5">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. In illum
               consequatur eos rem voluptatum fuga consectetur maiores magni quos
               repellendus, tempora alias dolorum, quas numquam consequuntur
               sint. Eligendi, omnis explicabo.
             </p>
-            <button class="bg-hero w-32 h-9 rounded-xl text-white hover:bg-hero hover:opacity-80 my-4">See More</button>
+            <button class="bg-hero max-lg:mt-14 w-32 h-9 rounded-xl text-white hover:bg-hero hover:opacity-80 my-4">See More</button>
           </div>
-          <div class="box-blog transition duration-1000 flex flex-col shadow-xl rounded-t-xl p-5 items-center w-72 h-[24rem] bg-[#161616]">
-            <h1 class="font-bold text-xl self-start hover:underline">
+          <div class="box-blog max-lg:w-full  transition duration-1000 flex flex-col shadow-xl rounded-t-xl p-5 items-center w-72 h-[24rem] bg-[#161616]">
+            <h1 class="font-bold text-xl max-lg:text-4xl self-start hover:underline">
               <a href="#">Title Article</a>
             </h1>
             <div class="flex self-start my-1 justify-center items-center">
               <i class="opacity-50 mr-2" data-feather="calendar"></i>
               <span>YYYY-MM-DD</span>
             </div>
-            <p>
+            <p class="max-lg:text-xl max-lg:mt-5">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. In illum
               consequatur eos rem voluptatum fuga consectetur maiores magni quos
               repellendus, tempora alias dolorum, quas numquam consequuntur
               sint. Eligendi, omnis explicabo.
             </p>
-            <button class="bg-hero w-32 h-9 rounded-xl text-white hover:bg-hero hover:opacity-80 my-4">See More</button>
+            <button class="bg-hero max-lg:mt-14 w-32 h-9 rounded-xl text-white hover:bg-hero hover:opacity-80 my-4">See More</button>
           </div>
         </div>
       </main>
