@@ -122,7 +122,7 @@ $(document).ready(function () {
   $(this).scrollTop(0)
 })
 
-window.addEventListener('scroll', () => {
+window.ontouchmove = function() {
   window.addEventListener('wheel', (event) => {
     if (intro.classList.contains('flex')) {
       let scroll = window.scrollY;
@@ -185,7 +185,7 @@ window.addEventListener('scroll', () => {
       }
     }
   });
-})
+}
 
 window.addEventListener('wheel', (event) => {
   if (intro.classList.contains('flex')) {
