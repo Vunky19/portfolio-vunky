@@ -43,8 +43,8 @@
     </script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="body font-poppins h-[1000vw] w-full">
-      <div class="intro z-50 fixed w-full h-screen flex flex-col overflow-hidden">
+  <body class="body font-poppins">
+      <!-- <div class="intro hidden z-50 fixed w-full h-screen flex flex-col overflow-hidden">
         <div class="kotak1 w-full h-2/4 bg-[#C3EDC0] transition duration-1000 translate-y-[-5%]"></div>
         <div class="kotak2 w-full h-2/4 bg-[#C3EDC0] transition duration-1000 translate-y-[5%]"></div>
         <div class="box w-full h-[6vh] box-border absolute flex top-[47vh]">
@@ -55,9 +55,9 @@
             <span class="kotak6 w-full bg-[#C3EDC0] translate-x-[0] transition duration-[0.5]"></span>
           </span>
         </div>
-      </div>
+      </div> -->
 
-    <nav class="autohide max-lg:h-16 group navbar flex z-50 fixed p-9 justify-center items-center w-full max-w-full left-0 top-0 backdrop-blur-lg border-b-2">
+    <nav class="autohide text-white max-lg:h-16 group navbar flex z-50 fixed p-9 justify-center items-center w-full max-w-full left-0 top-0 backdrop-blur-lg border-b-2">
       <div class="absolute left-32 font-montserrat font-bold uppercase text-3xl hover:text-hero max-lg:relative max-lg:left-0">
         <a href="#">Vunky</a>
       </div>
@@ -97,48 +97,37 @@
     </nav>
 
     <!-- fixed  -->
-    <section class="landing max-md:relative max-md:max-h-max max-md:h-fit max-xl:bg-gradient-to-b overflow-hidden container z-40 fixed mb-10 max-w-full max-h-screen bg-gradient-to-b from-[#c3e1fc] to-white">
-      <main class="flex w-full max-md:h-max h-screen max-w-6xl max-md:flex-col">
+    <section class="landing bg-fixed max-md:relative max-md:max-h-max max-md:h-fit max-xl:bg-gradient-to-b overflow-hidden container z-40 max-w-full max-h-screen bg-gradient-to-b from-[#020202] to-[#0a0a0a]">
+      <main class="flex max-md:bg-top max-md:w-full bg-no-repeat bg-fixed bg-center bg-[url('assets/svg/Untitled-6.svg')] w-full max-md:h-max h-screen max-md:flex-col">
         <div class="flex relative flex-col self-center p-10 min-w-[50%]">
-          <h1 class="text-7xl mb-5 max-md:mt-20">Hii</h1>
-          <h1 class="text-5xl max-[580px]:text-4xl max-[450px]:text-3xl max-[390px]:text-2xl">
-            I'm <span class="text-hero font-bold">Vunky Himawan</span>
+          <!-- <img class="absolute w-[37rem] top-[-12rem] right-[-40rem]"  src="assets/svg/Untitled-4.svg" alt="">
+          <img class="absolute w-[35rem] h-[35rem]"  src="assets/svg/Untitled-1.svg" alt="">
+          <img class="absolute w-[35rem] h-[35rem] -right-[10rem]"  src="assets/svg/Untitled-2.svg" alt="">
+           --><h1 class="text-7xl mb-5 max-md:mt-20 text-[#5A5A5A]">Hii</h1>
+          <h1 class="text-5xl z-[1] text-[#5A5A5A] max-[580px]:text-4xl max-[450px]:text-3xl max-[390px]:text-2xl">
+            I'm <span class="text-hero font-bold text-white">Vunky Himawan</span>
           </h1>
-          <h1 class="text-5xl mb-5 max-[580px]:text-4xl max-[450px]:text-3xl max-[390px]:text-2xl">
-            a <span class="text-hero font-bold">Web Development</span>
+          <h1 class="text-5xl z-[1] text-[#5A5A5A] mb-5 max-[580px]:text-4xl max-[450px]:text-3xl max-[390px]:text-2xl">
+            a <span class="text-hero text-white font-bold">Web Development</span>
           </h1>
-          <p class="mb-5">
+          <p class="mb-5 text-[#5A5A5A] z-[1]">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque qui
             sequi odit reprehenderit, sapiente architecto laborum ullam deserunt
             eligendi iusto quaerat et quibusdam numquam adipisci placeat odio
             praesentium repudiandae neque?
           </p>
-          <button class="self-start min-w-[140px] text-white bg-hero rounded-full p-2 hover:bg-hero hover:opacity-90">Let's Start</button>
+          <button class="self-start min-w-[140px] text-white bg-[#020202] border-[1px] border-white rounded-full p-2 hover:bg-[#5a5a5a] hover:opacity-90">Let's Start</button>
         </div>
         <div class="flex justify-center w-full h-full z-10">
           <div class="flex relative justify-center w-full">
-            <img class="object-cover max-md:h-[128%] max-md:w-full grayscale w-full h-full bottom-0 translate-y-[9.8vw]" src="assets/image/DSC_1964-removebg-preview_waifu2x_photo_noise3_copy.png" alt=""/>
-              <span class="flex absolute items-end justify-center -z-10 top-0 overflow-hidden w-full h-full">
-                <div class="shadow-xl absolute max-md:translate-y-[15vw] max-md:rotate-12 max-md:rounded-[10vw] max-md:w-full rounded-tl-[2vw] translate-y-[2vw] rounded-tr-[8vw] rotate-6 w-[30vw] h-[60vw] bg-gradient-to-br from-[#68ADF7] via-[#F5CCD4] to-[#68ADF7]"></div>
-                <div class="shadow-2xl w-[2.5vw] h-[2.5vw] absolute max-md:border-[1.2rem] max-md:translate-y-[23rem] max-md:translate-x-24 max-md:w-[15rem] max-md:h-[15rem] rounded-full top-0 left-0 translate-x-[6.3vw] border-white border-[0.3vw] bg-transparent translate-y-[9vw]"></div>
-              </span>
-            <span class="absolute bottom-0 -z-10 h-full w-full">
-              <div class="max-md:w-[17vw] max-md:h-[17vw] max-md:border-[1.5vw] w-[2.5vw] h-[2.5vw] absolute border-blue-600 border-[0.3vw] rounded-full top-20 left-20 bg-transparent shadow-2xl"></div>
-              <div class="max-md: max-md:w-[14vw] max-md:h-[14vw] max-md:border-[1.5vw] w-[2.5vw] h-[2.5vw] absolute bg-transparent shadow-2xl border-orange-600 border-[0.3vw] rounded-full right-10 top-0"></div>
-              <div class="max-md:bottom-0 max-md:translate-y-[20rem] max-md:h-[9rem] max-md:w-[9rem] max-md:border-[0.7rem] w-[2.5vw] h-[2.5vw] absolute bg-transparent shadow-2xl border-red-600 border-[0.3vw] rounded-full left-20 top-[30vw]"></div>
-              <div class="max-md:top-[23vw] max-md:w-[15vw] max-md:h-[15vw] max-md:border-[1.5vw] w-[2.5vw] h-[2.5vw] absolute bg-transparent shadow-2xl border-sky-700 border-[0.3vw] rounded-full top-40 right-20"></div>
-              <div class="max-md:top-[16vw] max-md:left-[2vw] max-md:w-[12vw] max-md:h-[12vw] max-md:border-[1.5vw] w-[2.5vw] h-[2.5vw] absolute bg-transparent shadow-2xl border-green-700 border-[0.3vw] rounded-full top-52 left-14"></div>
-              <div class="max-md:top-[3vw] max-md:w-[15vw] max-md:h-[15vw] max-md:border-[1.5vw] w-[2.5vw] h-[2.5vw] absolute bg-transparent shadow-2xl border-indigo-900 border-[0.3vw] rounded-full top-24 left-80"></div>
-              <div class="max-md:hidden w-[2.5vw] h-[2.5vw] absolute bg-transparent shadow-2xl border-lime-600 border-[0.3vw] rounded-full bottom-20 right-10"></div>
-            </span>
           </div>
         </div>
       </main>
     </section>
 
     <!-- hidden -->
-    <section id="about" class="about max-md:h-max max-md:max-h-max hidden container bg-white justify-between h-screen max-w-full max-h-screen transition duration-1000">
-      <main class="flex max-md:flex-col p-6 relative justify-center items-center h-full">
+    <section id="about" class="about bg-fixed bg-gradient-to-b from-[#0a0a0a] to-[#020202] text-white max-md:h-max max-md:max-h-max container justify-between h-screen max-w-full max-h-screen transition duration-1000">
+      <main class="flex max-md:max-h-max max-md:h-fit max-md:flex-col p-6 relative justify-center items-center h-screen">
         <div class="hidden text-center mb-6 max-md:flex max-md:flex-col justify-center items-center w-full">
           <h1 class="uppercase font-bold text-5xl">About Me</h1>
           <div class="w-44 border-t-4 border-hero text-center"></div>
@@ -146,13 +135,13 @@
         <div class="flex justify-center items-center w-full h-full max-md:h-[20vh]">
           <img class="object-cover h-full max-md:w-full" src="assets/image/DSC09725_copy.jpg" alt="" />
         </div>
-        <div class="flex flex-col justify-center items-center relative w-2/4 h-full max-md:w-full ">
+        <div class="flex flex-col items-center relative w-2/4 h-full max-md:w-full ">
           <div class="flex flex-col justify-center items-center font-bold w-full max-md:hidden">
-            <h1 class="text-7xl self-center uppercase">About Me</h1>
-            <div class="w-64 border-t-4 border-hero"></div>
+            <h1 class="text-7xl self-center uppercase text-white">About Me</h1>
+            <div class="w-64 border-t-4 border-[#5a5a5a]"></div>
           </div>
-          <div class="flex flex-col max-md:text-justify justify-center h-full max-h-full w-full">
-            <p class="max-md:text-2xl indent-8 max-md:mt-5">
+          <div class="text-[#5a5a5a] flex flex-col max-md:text-justify max-md:h-fit max-md:max-h-max h-full max-h-full w-full">
+            <p class="max-md:text-sm indent-8 max-md:mt-5">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
               quia dignissimos inventore laborum hic quaerat aperiam laudantium
               laboriosam. Harum accusantium enim esse, ex sequi similique
@@ -161,84 +150,107 @@
               officiis, tempore excepturi blanditiis amet illum possimus
               assumenda odit consectetur!
             </p>
-            <p class="max-md:text-2xl mt-6 indent-8">
+            <p class="max-md:text-sm mt-6 indent-8">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Perspiciatis nihil, unde consequuntur incidunt sint quod
               recusandae tempore architecto dicta nostrum quidem eos voluptas,
               nemo autem magni cupiditate, tempora ut molestiae.
             </p>
-            <p class="max-md:text-2xl my-6 indent-8">
+            <p class="max-md:text-sm my-6 indent-8">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ad,
               officia iure explicabo quo odio?
             </p>
-            <button class="self-start min-w-[140px] text-white bg-hero rounded-full p-2 hover:bg-hero hover:opacity-90">Download CV</button>
+            <button class="self-start min-w-[140px] text-white bg-[#020202] rounded-full p-2 border-[1px] border-white hover:bg-hero hover:opacity-90">Download CV</button>
           </div>
         </div>
       </main>
     </section>
 
     <!-- hidden and flex -->
-    <section id="skills" class="skills hidden justify-center items-center container bg-black text-white w-full h-screen max-w-full max-h-max p-7 transition duration-1000">
-      <main class="flex flex-col justify-center items-center">
+    <section id="skills" class="skills max-md:max-h-fit max-md:h-fit bg-fixed flex justify-center items-center container bg-gradient-to-b from-[#020202] to-[#0a0a0a] text-white w-full h-screen max-w-full max-h-max p-7 transition duration-1000">
+      <main class="max-md:h-full flex flex-col justify-center items-center w-full h-screen">
         <div class="flex flex-col items-center">
           <h1 class="text-4xl uppercase font-bold">My Skills</h1>
-          <h3 class="text-xl">I have experience with these technologies</h3>
+          <h3 class="text-xl text-[#5a5a5a]">I have experience with these technologies</h3>
         </div>
-        <ul class="list-none grid grid-cols-3 gap-5 justify-center items-center mt-5">
-          <li class="icon transition duration-1000 flex justify-center items-center bg-[#161616] shadow-[0_1px_2px_0_rgb(189,189,189,0.75)] w-[150px] h-[150px] order-6"><img class="w-[100px] h-[100px]" src="assets/svg/13.svg" alt=""/></li>
-          <li class="icon transition duration-1000 flex justify-center items-center bg-[#161616] shadow-[0_1px_2px_0_rgb(189,189,189,0.75)] w-[150px] h-[150px] order-5"><img class="w-[100px] h-[100px]" src="assets/svg/15.svg" alt=""/></li>
-          <li class="icon transition duration-1000 flex justify-center items-center bg-[#161616] shadow-[0_1px_2px_0_rgb(189,189,189,0.75)] w-[150px] h-[150px] order-4"><img class="w-[100px] h-[100px]" src="assets/svg/7.svg" alt=""/></li>
-          <li class="icon transition duration-1000 flex justify-center items-center bg-[#161616] shadow-[0_1px_2px_0_rgb(189,189,189,0.75)] w-[150px] h-[150px] order-3"><img class="w-[100px] h-[100px]" src="assets/svg/4.svg" alt=""/></li>
-          <li class="icon transition duration-1000 flex justify-center items-center bg-[#161616] shadow-[0_1px_2px_0_rgb(189,189,189,0.75)] w-[150px] h-[150px] order-2"><img class="w-[100px] h-[100px]" src="assets/svg/3.svg" alt=""/></li>
-          <li class="icon transition duration-1000 flex justify-center items-center bg-[#161616] shadow-[0_1px_2px_0_rgb(189,189,189,0.75)] w-[150px] h-[150px] order-1"><img class="w-[100px] h-[100px]" src="assets/svg/2.svg" alt=""/></li>
+        <ul class="list-none max-md:h-fit max-md:grid-cols-1 mt-5 grid grid-cols-2 gap-5 justify-center items-center h-full w-full">
+          <li class="icon p-3 h-20 hover:bg-[#38BDF8] group border-[1px] border-[#5a5a5a] text-xl rounded-full flex justify-between items-center">
+            <span class="w-14 h-w-14 rounded-full">
+              <img class="group-hover:grayscale w-full h-full" src="assets/svg/13.svg" alt=""/>
+            </span>
+            TAILWINDCSS</li>
+          <li class="icon p-3 h-20 border-[1px] border-[#5a5a5a] text-xl rounded-full flex justify-between items-center">
+            <span class="w-14 h-w-14 overflow-hidden rounded-full">
+              <img class="object-cover" src="assets/svg/15.svg" alt=""/>
+            </span>
+            JavaScript</li>
+          <li class="icon p-3 h-20 border-[1px] border-[#5a5a5a] text-xl rounded-full flex justify-between items-center">
+            <span class="w-14 h-w-14 overflow-hidden rounded-full">
+              <img class="object-cover w-full h-full" src="assets/svg/7.svg" alt=""/>
+            </span>
+            MySQL</li>
+          <li class="icon p-3 h-20 border-[1px] border-[#5a5a5a] text-xl rounded-full flex justify-between items-center">
+            <span class="w-14 h-w-14 overflow-hidden rounded-full">
+              <img class="object-cover w-full h-full" src="assets/svg/4.svg" alt=""/>
+            </span>
+            Java</li>
+          <li class="icon p-3 h-20 border-[1px] border-[#5a5a5a] text-xl rounded-full flex justify-between items-center">
+            <span class="w-14 h-w-14 overflow-hidden rounded-full">
+              <img class="object-cover scale-125 w-full h-full" src="assets/svg/3.svg" alt=""/>
+            </span>
+            HTML</li>
+          <li class="icon p-3 h-20 border-[1px] border-[#5a5a5a] text-xl rounded-full flex justify-between items-center">
+            <span class="w-14 h-w-14 overflow-hidden rounded-full">
+              <img class="object-cover scale-125 w-full h-full" src="assets/svg/2.svg" alt=""/>
+            </span>
+            CSS</li>
         </ul>
       </main>
     </section>
 
-
     <!-- hidden and flex -->
-    <section id="project" class="project hidden container transition duration-1000 justify-center items-center w-full h-screen max-w-full max-h-screen">
-      <main class="flex flex-col p-10 justify-center items-center">
+    <section id="project" class="project max-md:h-fit max-md:max-h-fit text-white bg-fixed bg-gradient-to-b from-[#0a0a0a] to-[#020202] container transition duration-1000 justify-center items-center w-full h-screen max-w-full max-h-screen">
+      <main class=" max-md:h-fit h-screen flex flex-col p-10 justify-center items-center">
         <div class="flex flex-col justify-center items-center my-10">
           <h1 class="font-bold uppercase text-2xl">Recent Projects</h1>
           <div class="w-32 border-hero border-t-4 border-black"></div>
         </div>
-        <div class="grid gap-6 grid-cols-3 grid-rows-2">
-          <div class="flex relative cursor-pointer w-72 h-44 bg-hero group">
+        <div class="grid max-md:w-full max-md:h-full max-md:grid-cols-1 gap-6 grid-cols-3 grid-rows-2">
+          <div class="flex relative max-md:w-full cursor-pointer w-72 h-44 bg-hero group">
             <span class="flex justify-center items-center w-full h-full absolute bg-transparent transition duration-800 group-hover:bg-hero scale-50 group-hover:scale-100 invisible group-hover:visible"><i class="text-white" data-feather="zoom-in"></i></span>
-            <img class="w-full" src="assets/image/DSC09725.jpg" alt="" />
+            <img class="w-full object-cover" src="assets/image/DSC09725.jpg" alt="" />
             <span class="flex justify-center items-center w-full absolute h-10 z-10 opacity-70 self-end bg-hero"><span class="text-xl text-white opacity-100 uppercase">Title</span></span>
           </div>
-          <div class="flex relative cursor-pointer w-72 h-44 bg-hero group">
+          <div class="flex relative max-md:w-full cursor-pointer w-72 h-44 bg-hero group">
             <span class="flex justify-center items-center w-full h-full absolute bg-transparent transition duration-800 group-hover:bg-hero scale-50 group-hover:scale-100 invisible group-hover:visible"><i class="text-white" data-feather="zoom-in"></i></span>
-            <img class="w-full" src="assets/image/DSC09725.jpg" alt="" />
+            <img class="w-full object-cover" src="assets/image/DSC09725.jpg" alt="" />
             <span class="flex justify-center items-center w-full absolute h-10 z-10 opacity-70 self-end bg-hero"><span class="text-xl text-white opacity-100 uppercase">Title</span></span>
           </div>
-          <div class="flex relative cursor-pointer w-72 h-44 bg-hero group">
+          <div class="flex relative max-md:w-full cursor-pointer w-72 h-44 bg-hero group">
             <span class="flex justify-center items-center w-full h-full absolute bg-transparent transition duration-800 group-hover:bg-hero scale-50 group-hover:scale-100 invisible group-hover:visible"><i class="text-white" data-feather="zoom-in"></i></span>
-            <img class="w-full" src="assets/image/DSC09725.jpg" alt="" />
+            <img class="w-full object-cover" src="assets/image/DSC09725.jpg" alt="" />
             <span class="flex justify-center items-center w-full absolute h-10 z-10 opacity-70 self-end bg-hero"><span class="text-xl text-white opacity-100 uppercase">Title</span></span>
           </div>
-          <div class="flex relative cursor-pointer w-72 h-44 bg-hero group">
+          <div class="flex relative max-md:w-full cursor-pointer w-72 h-44 bg-hero group">
             <span class="flex justify-center items-center w-full h-full absolute bg-transparent transition duration-800 group-hover:bg-hero scale-50 group-hover:scale-100 invisible group-hover:visible"><i class="text-white" data-feather="zoom-in"></i></span>
-            <img class="w-full" src="assets/image/DSC09725.jpg" alt="" />
+            <img class="w-full object-cover" src="assets/image/DSC09725.jpg" alt="" />
             <span class="flex justify-center items-center w-full absolute h-10 z-10 opacity-70 self-end bg-hero"><span class="text-xl text-white opacity-100 uppercase">Title</span></span>
           </div>
-          <div class="flex relative cursor-pointer w-72 h-44 bg-hero group">
+          <div class="flex relative max-md:w-full cursor-pointer w-72 h-44 bg-hero group">
             <span class="flex justify-center items-center w-full h-full absolute bg-transparent transition duration-800 group-hover:bg-hero scale-50 group-hover:scale-100 invisible group-hover:visible"><i class="text-white" data-feather="zoom-in"></i></span>
-            <img class="w-full" src="assets/image/DSC09725.jpg" alt="" />
+            <img class="w-full object-cover" src="assets/image/DSC09725.jpg" alt="" />
             <span class="flex justify-center items-center w-full absolute h-10 z-10 opacity-70 self-end bg-hero"><span class="text-xl text-white opacity-100 uppercase">Title</span></span>
           </div>
-          <div class="flex relative cursor-pointer w-72 h-44 bg-hero group">
+          <div class="flex relative max-md:w-full cursor-pointer w-72 h-44 bg-hero group">
             <span class="flex justify-center items-center w-full h-full absolute bg-transparent transition duration-800 group-hover:bg-hero scale-50 group-hover:scale-100 invisible group-hover:visible"><i class="text-white" data-feather="zoom-in"></i></span>
-            <img class="w-full" src="assets/image/DSC09725.jpg" alt="" />
+            <img class="w-full object-cover" src="assets/image/DSC09725.jpg" alt="" />
             <span class="flex justify-center items-center w-full absolute h-10 z-10 opacity-70 self-end bg-hero"><span class="text-xl text-white opacity-100 uppercase">Title</span></span>
           </div>
         </div>
       </main>
     </section>
 
-    <section id="blog" class="blog max-md:h-max max-md:max-h-max transition duration-1000 flex justify-center items-center container w-full h-screen max-w-full max-h-screen">
+    <section id="blog" class="blog bg-fixed text-white border-4 border-white bg-gradient-to-b from-[#020202] to-[#0a0a0a] max-md:h-max max-md:max-h-max transition duration-1000 flex justify-center items-center container w-full h-screen max-w-full max-h-screen">
       <main class="flex w-full h-full flex-col justify-center items-center p-10">
         <div class="flex flex-col justify-center items-center p-4 max-w-full max-h-screen">
           <h1 class="text-2xl font-bold uppercase">Recent Posts</h1>

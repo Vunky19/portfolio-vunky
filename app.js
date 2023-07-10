@@ -30,54 +30,6 @@ menu.addEventListener('click', () => {
   xMenu.classList.toggle('hidden');
 })
 
-/* window.onscroll = function () {
-  let scroll = window.scrollY;
-  let docHeight = document.body.offsetHeight;
-  let winHeight = window.innerHeight;
-  let scrollPercent = scroll / (docHeight - winHeight);
-  let scrollPercentRounded = Math.round(scrollPercent * 100);
-
-  document.title = `${scrollPercentRounded}`
-
-  if (scrollPercentRounded >= 15 && scrollPercentRounded <= 34) {
-    aboutSec.classList.replace('bg-white', 'bg-black');
-  } else {
-    aboutSec.classList.replace('bg-black', 'bg-white')
-    aboutSec.classList.remove('text-white')
-  }
-  if (scrollPercentRounded >= 42 && scrollPercentRounded <= 63) {
-    list.forEach((e) => {
-      e.classList.replace('bg-[#161616]', 'bg-slate-200');
-      e.classList.replace('shadow-[0_1px_2px_0_rgb(189,189,189,0.75)]', 'shadow-xl')
-    })
-    skills.classList.replace('bg-black', 'bg-white');
-    skills.classList.remove('text-white');
-  } else {
-    list.forEach((e) => {
-      e.classList.replace('bg-slate-200', 'bg-[#161616]');
-      e.classList.replace('shadow-xl', 'shadow-[0_1px_2px_0_rgb(189,189,189,0.75)]')
-    })
-    skills.classList.replace('bg-white', 'bg-black');
-    skills.classList.add('text-white')
-  }
-  if (scrollPercentRounded >= 68 && scrollPercentRounded <= 87) {
-    project.classList.add('bg-black', 'text-white');
-  } else {
-    project.classList.remove('bg-black', 'text-white');
-  }
-  if (scrollPercentRounded >= 90 && scrollPercentRounded <= 100) {
-    boxBlog.forEach((e) => {
-      e.classList.replace('bg-[#161616]', 'bg-slate-200');
-    })
-    blog.classList.remove('bg-black', 'text-white');
-  } else {
-    boxBlog.forEach((e) => {
-      e.classList.replace('bg-slate-200', 'bg-[#161616]');
-    })
-    blog.classList.add('bg-black', 'text-white');
-  }
-} */
-
 document.addEventListener("DOMContentLoaded", function () {
 
 
@@ -92,22 +44,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (!backdownMenu.classList.contains('translate-y-0')) {
         if (scroll_top < last_scroll_top) {
-          if (scrollPercentRounded >= 15 && scrollPercentRounded <= 34) {
-            el_autohide.classList.remove('scrolled-down');
-            el_autohide.classList.add('scrolled-up');
-          } else if (scrollPercentRounded >= 42 && scrollPercentRounded <= 63) {
-            el_autohide.classList.remove('scrolled-down');
-            el_autohide.classList.add('scrolled-up');
-          } else if (scrollPercentRounded >= 68 && scrollPercentRounded <= 87) {
-            el_autohide.classList.remove('scrolled-down');
-            el_autohide.classList.add('scrolled-up');
-          } else if (scrollPercentRounded >= 90 && scrollPercentRounded <= 100) {
-            el_autohide.classList.remove('scrolled-down');
-            el_autohide.classList.add('scrolled-up');
-          } else {
-            el_autohide.classList.remove('scrolled-down');
-            el_autohide.classList.add('scrolled-up');
-          }
+          el_autohide.classList.remove('scrolled-down');
+          el_autohide.classList.add('scrolled-up');
         } else {
           el_autohide.classList.remove('scrolled-up');
           el_autohide.classList.add('scrolled-down');
@@ -118,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-$(document).ready(function () {
+/* $(document).ready(function () {
   $(this).scrollTop(0)
 })
 
@@ -193,8 +131,8 @@ if (window.innerWidth >= 1024) {
   bdy.classList.remove('h-[1000vw]', 'w-full');
   cnt2.classList.replace('absolute', 'hidden');
   aboutSec.classList.remove('hidden');
-  /* skills.classList.remove('hidden'); */
-  /* project.classList.remove('hidden'); */
+   skills.classList.remove('hidden'); 
+   project.classList.remove('hidden'); 
   blog.classList.remove('hidden');
   landing.classList.remove('fixed', 'z-40');
-}
+} */
