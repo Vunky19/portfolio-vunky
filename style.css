@@ -1,22 +1,3 @@
-/* .intro h1 {
-  color: transparent;
-  -webkit-text-stroke: 2px #ff6000;
-}
-
-.intro h1::before {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color: #ff6000;
-  -webkit-text-stroke: 0vw #ff6000;
-  overflow: hidden;
-  animation: animate 6s linear;
-  text-transform: uppercase;
-} */
-
 .kotak2 h1 {
   color: transparent;
   -webkit-text-stroke: 2px black;
@@ -43,6 +24,10 @@
 .scrolled-up{
   transform:translateY(0); 
   transition: all 1s ease-in-out;
+}
+
+body::-webkit-scrollbar{
+  display: none;
 }
 
 @keyframes animate {

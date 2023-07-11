@@ -9,6 +9,7 @@ const backdownMenu = document.querySelector('.backdown-menu');
 const hamburger = document.querySelector('.hamburger-menu')
 const xMenu = document.querySelector('.x-menu')
 const el_autohide = document.querySelector('.autohide');
+const body = document.querySelector('.body');
 const zeroPad = (num, places) => String(num).padStart(places, '0');
 let x = 0;
 
@@ -32,6 +33,7 @@ window.addEventListener('DOMContentLoaded', () => {
       intro_el.classList.add('scale-150', 'opacity-0');
       setTimeout(() => {
         intro_el.classList.add('hidden');
+        body.classList.remove('overflow-hidden')
       }, 1000)
     }
   }, 100);
