@@ -12,11 +12,15 @@ const el_autohide = document.querySelector('.autohide');
 const zeroPad = (num, places) => String(num).padStart(places, '0');
 let x = 0;
 
+$(document).ready(function () {
+  $(this).scrollTop(0)
+})
+
 btn.addEventListener('click', () => {
   plane.classList.toggle('translate-y-32');
 })
 
-/* window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('DOMContentLoaded', () => {
   let count = -100;
   const counter = setInterval(() => {
     x++;
@@ -31,7 +35,7 @@ btn.addEventListener('click', () => {
       }, 1000)
     }
   }, 100);
-}) */
+})
 
 menu.addEventListener('click', () => {
   backdownMenu.classList.toggle('translate-y-[-120%]');
