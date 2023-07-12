@@ -36,7 +36,7 @@ window.addEventListener('DOMContentLoaded', () => {
         body.classList.remove('overflow-hidden')
       }, 1000)
     }
-  }, 100);
+  }, 50);
 })
 
 menu.addEventListener('click', () => {
