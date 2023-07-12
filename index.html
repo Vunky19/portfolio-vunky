@@ -13,27 +13,10 @@
       tailwind.config = {
         theme: {
           extend: {
-            animation: {
-              slide: "slide 15s linear infinite",
-              all: "all 0.3s ease-in-out",
-            },
-            keyframes: {
-              slide: {
-                "0%": { transform: "translate3d(0, 0, 0)" },
-                "100%": { transform: "translate3d(-1500px, 0, 0)" },
-              },
-              all: {
-                "0%, 20%": { transform: "translateY(0)" },
-                "100%": { transform: "translateY(-100%)" },
-              },
-            },
             fontFamily: {
               poppins: ["Poppins"],
               montserrat: ["Montserrat"],
               raleway:["Raleway"]
-            },
-            colors: {
-              hero: "#FF6000",
             },
           },
         },
@@ -41,37 +24,36 @@
     </script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="body font-raleway overflow-hidden">
+  <body class="body font-raleway overflow-hidden bg-[#020202]">
 
-    <section class="intro transition duration-1000 w-full p-10 h-screen z-50 fixed bg-[#020202]">
+    <section class="intro transition duration-1000 w-full p-5 h-screen z-50 fixed bg-[#020202]">
       <div class="relative h-full">
         <h1 class="intro-num text-white text-8xl right-0 uppercase absolute">000</h1>
-        <div class="absolute bottom-20 rounded-2xl w-full h-16 border-white border-4 overflow-hidden">
-          <div class="box transition duration-[170ms] rounded-xl w-full h-full bg-white translate-x-[-100%]"></div>
+        <div class="absolute max-lg:bottom-20 bottom-0 rounded-xl w-full max-lg:rounded-md max-lg:h-10 h-16 border-white border-opacity-25 border-[1px] p-1 overflow-hidden">
+          <div class="w-full h-full bg-transparent overflow-hidden max-lg:rounded-sm rounded-md">
+            <div class="box transition duration-[170ms] opacity-90 rounded-md w-full h-full max-lg:rounded-sm bg-white translate-x-[-100%]"></div>
+          </div>
         </div>
       </div>
     </section>
 
     <nav class="autohide text-white max-md:h-2 max-lg:h-16 group navbar flex z-40 fixed p-9 justify-center items-center w-full max-w-full left-0 top-0 backdrop-blur-lg border-b-2">
-      <div class="absolute left-32 font-montserrat font-bold uppercase max-md:text-xl text-3xl hover:text-hero max-lg:relative max-lg:left-0">
+      <div class="absolute left-32 font-montserrat font-bold uppercase max-md:text-xl text-3xl hover:text-[#5a5a5a] max-lg:relative max-lg:left-0">
         <a href="#">Vunky</a>
       </div>
       <ul class="max-lg:hidden">
-        <li class="inline p-10 hover:text-hero"><a href="#about">About</a></li>
-        <li class="inline p-10 hover:text-hero"><a href="#skills">Skills</a></li>
-        <li class="inline p-10 hover:text-hero"><a href="#project">Project</a></li>
-        <li class="inline p-10 hover:text-hero"><a href="#blog">Blog</a></li>
-        <li class="inline p-10 hover:text-hero"><a href="#contact">Contact</a></li>
+        <li class="inline p-10 hover:text-[#5a5a5a] hover:font-bold"><a href="#about">About</a></li>
+        <li class="inline p-10 hover:text-[#5a5a5a] hover:font-bold"><a href="#skills">Skills</a></li>
+        <li class="inline p-10 hover:text-[#5a5a5a] hover:font-bold"><a href="#project">Project</a></li>
+        <li class="inline p-10 hover:text-[#5a5a5a] hover:font-bold"><a href="#blog">Blog</a></li>
+        <li class="inline p-10 hover:text-[#5a5a5a] hover:font-bold"><a href="#contact">Contact</a></li>
       </ul>
       <div class="flex absolute right-24 max-lg:hidden">
-        <a href="#" class="mx-5 hover:text-hero">
+        <a href="#" class="mx-5 hover:text-[#5a5a5a]">
           <i data-feather="instagram"></i>
         </a>
-        <a href="#" class="mx-5 hover:text-hero">
+        <a href="#" class="mx-5 hover:text-[#5a5a5a]">
           <i data-feather="linkedin"></i>
-        </a>
-        <a href="#" class="mx-5 hover:text-hero">
-          <i data-feather="twitter"></i>
         </a>
       </div>
       <div class="menu hidden group transition duration-1000 max-lg:block max-lg:right-10 max-lg:absolute">
@@ -80,34 +62,31 @@
       </div>
     </nav>
 
-    <nav class="backdown-menu mt-16 z-30 fixed w-full translate-y-[-120%] transition duration-1000 overflow-auto max-w-full h-fit backdrop-blur-lg max-h-screen">
+    <nav class="backdown-menu text-white mt-16 z-30 fixed w-full translate-y-[-120%] transition duration-1000 overflow-auto max-w-full h-fit backdrop-blur-lg max-h-screen">
       <div class="flex flex-col items-center">
         <ul class="w-full h-full">
-          <li class="p-10 text-center text-6xl hover:text-hero max-sm:text-4xl">
+          <li class="p-10 text-center text-6xl hover:text-[#5a5a5a] max-sm:text-4xl">
             <a href="#about">About</a>
           </li>
-          <li class="p-10 text-center text-6xl hover:text-hero max-sm:text-4xl">
+          <li class="p-10 text-center text-6xl hover:text-[#5a5a5a] max-sm:text-4xl">
             <a href="#skills">Skills</a>
           </li>
-          <li class="p-10 text-center text-6xl hover:text-hero max-sm:text-4xl">
+          <li class="p-10 text-center text-6xl hover:text-[#5a5a5a] max-sm:text-4xl">
             <a href="#project">Project</a>
           </li>
-          <li class="p-10 text-center text-6xl hover:text-hero max-sm:text-4xl">
+          <li class="p-10 text-center text-6xl hover:text-[#5a5a5a] max-sm:text-4xl">
             <a href="#blog">Blog</a>
           </li>
-          <li class="p-10 text-center text-6xl hover:text-hero max-sm:text-4xl">
+          <li class="p-10 text-center text-6xl hover:text-[#5a5a5a] max-sm:text-4xl">
             <a href="#contact">Contact</a>
           </li>
         </ul>
         <div class="flex my-5 text-7xl h-[70px] w-full justify-center items-center">
-          <a href="#" class="mx-5 hover:text-hero">
+          <a href="#" class="mx-5 hover:text-[#5a5a5a]">
             <i class="h-[40px] w-[40px] opacity-50 text-3xl max-sm:text-xl" data-feather="instagram"></i>
           </a>
-          <a href="#" class="mx-5 hover:text-hero">
+          <a href="#" class="mx-5 hover:text-[#5a5a5a]">
             <i class="h-[40px] w-[40px] opacity-50 text-3xl max-sm:text-xl" data-feather="linkedin"></i>
-          </a>
-          <a href="#" class="mx-5 hover:text-hero">
-            <i class="h-[40px] w-[40px] opacity-50 text-3xl max-sm:text-xl" data-feather="twitter"></i>
           </a>
         </div>
       </div>
@@ -117,8 +96,8 @@
     <section class="landing bg-fixed max-md:relative max-md:max-h-max max-md:h-fit max-xl:bg-gradient-to-b overflow-hidden container z-20 max-w-full max-h-screen bg-gradient-to-b from-[#020202] to-[#0a0a0a]">
       <main class="flex justify-center max-md:bg-cover max-md:w-full bg-no-repeat bg-fixed bg-center bg-[url('assets/svg/Untitled-6.svg')] w-full max-md:h-max h-screen max-md:flex-col">
         <div class="flex relative flex-col font-raleway justify-center items-center text-center p-10 w-full">
-          <h1 class="text-5xl max-md:mt-20 z-[1] text-[#5A5A5A] max-[580px]:text-4xl max-[450px]:text-3xl max-[390px]:text-2xl">
-            I'm <span class="text-hero font-bold text-white">Vunky Himawan</span> a <span class="text-hero text-white font-bold">Web Development</span>
+          <h1 class="text-5xl mix-blend-difference max-md:mt-20 z-[1] text-[#5A5A5A] max-[580px]:text-4xl max-[450px]:text-3xl max-[390px]:text-2xl">
+            I'm <span class="font-bold text-white">Vunky Himawan</span> a <span class="text relative text-white font-bold">Student</span>
           </h1>
           <p class="my-5 text-[#5A5A5A] z-[1]">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque qui
@@ -135,7 +114,7 @@
 
     <!-- hidden -->
     <section id="about" class="about bg-fixed bg-gradient-to-b from-[#020202] to-[#0a0a0a] text-white max-lg:h-max max-lg:max-h-max container justify-between h-screen max-w-full max-h-screen transition duration-1000">
-      <main class="flex max-lg:max-h-max max-lg:h-fit max-lg:flex-col p-6 relative justify-center items-center h-screen">
+      <main class="flex max-lg:max-h-max max-lg:h-fit max-lg:flex-col p-5 relative justify-center items-center h-screen">
         <div class="hidden text-center mb-6 max-lg:flex max-lg:flex-col justify-center items-center w-full">
           <h1 class="uppercase font-bold text-5xl">About Me</h1>
         </div>
@@ -173,11 +152,11 @@
     </section>
 
     <!-- hidden and flex -->
-    <section id="skills" class="skills max-lg:max-h-fit max-lg:h-fit bg-fixed flex justify-center items-center container bg-gradient-to-b from-[#020202] to-[#0a0a0a] text-white w-full h-screen max-w-full max-h-max p-7 transition duration-1000">
-      <main class="max-lg:h-full flex flex-col justify-center items-center w-full h-screen">
+    <section id="skills" class="skills max-lg:max-h-fit max-lg:h-fit bg-fixed flex justify-center items-center container bg-gradient-to-b from-[#020202] to-[#0a0a0a] text-white w-full h-screen max-w-full max-h-max transition duration-1000">
+      <main class="max-lg:h-full p-5 flex flex-col justify-center items-center w-full h-screen">
         <div class="flex flex-col items-center">
           <h1 class="text-2xl uppercase font-bold">My Skills</h1>
-          <h3 class="text-xl text-[#5a5a5a]">I have experience with these technologies</h3>
+          <h3 class="text-xl text-center text-[#5a5a5a]">I have experience with these technologies</h3>
         </div>
         <ul class="list-none max-lg:h-fit max-lg:grid-cols-1 mt-5 grid grid-cols-2 gap-5 justify-center items-center h-fit w-full">
           <li class="icon p-3 h-20 hover:bg-[#38BDF8] transition duration-300 group border-[1px] border-[#5a5a5a] text-xl rounded-2xl flex justify-between items-center">
@@ -220,63 +199,81 @@
 
     <!-- hidden and flex -->
     <section id="project" class="project max-md:h-fit max-md:max-h-fit text-white bg-fixed bg-gradient-to-b from-[#020202] to-[#0a0a0a] container transition duration-1000 justify-center items-center w-full max-w-full max-h-max">
-      <main class="max-md:h-fit h-fit flex flex-col p-10 justify-center items-center">
+      <main class="max-md:h-fit h-fit flex flex-col p-5 justify-center items-center">
         <div class="flex flex-col justify-center items-center my-10">
           <h1 class="font-bold uppercase text-2xl">Recent Projects</h1>
         </div>
         <div class="grid max-md:w-full max-md:h-full max-md:grid-cols-1 gap-6 grid-cols-2 w-full max-h-max">
-          <div class="flex rounded-[3rem] overflow-hidden group transition duration-700 border-t-white border-t-[1px] flex-col relative max-md:w-full cursor-pointer w-full h-[30rem] bg-[#0a0a0a] group">
-            <span class="text-xl font-raleway font-light flex p-6 justify-between items-center w-full h-[4rem]">
+          <div class="flex rounded-3xl overflow-hidden group transition duration-700 border-t-white border-t-[1px] flex-col relative max-md:w-full cursor-pointer w-full h-[30rem] max-lg:h-[20rem] bg-[#0a0a0a] group">
+            <span class="text-xl font-raleway font-light flex p-6 justify-between items-center w-full max-lg:h-7 h-[4rem]">
               <h1>Title</h1>
               <h1>YYYY</h1>
             </span>
-            <span class="overflow-hidden rounded-[3rem] h-full w-full">
-              <img class="w-full transition duration-700 group-hover:scale-105 group-hover:brightness-50 h-full object-center object-cover" src="assets/image/DSC09725.jpg" alt=""/>
+            <span class="overflow-hidden rounded-xl h-full w-full">
+              <!-- <img class="w-full transition duration-700 group-hover:scale-105 group-hover:brightness-50 h-full object-center object-cover" src="assets/image/DSC09725.jpg" alt=""/> -->
+              <div class="w-full flex justify-center items-center transition duration-700 group-hover:scale-105 h-full object-center object-cover">
+                <h1 class="text-3xl">Project Picture</h1>
+              </div>
             </span>
           </div>
-          <div class="flex rounded-[3rem] overflow-hidden group transition duration-700 border-t-white border-t-[1px] flex-col relative max-md:w-full cursor-pointer w-full h-[30rem] bg-[#0a0a0a] group">
-            <span class="text-xl font-raleway font-light flex p-6 justify-between items-center w-full h-[4rem]">
+          <div class="flex rounded-3xl overflow-hidden group transition duration-700 border-t-white border-t-[1px] flex-col relative max-md:w-full cursor-pointer w-full h-[30rem] max-lg:h-[20rem] bg-[#0a0a0a] group">
+            <span class="text-xl font-raleway font-light flex p-6 justify-between items-center w-full max-lg:h-7 h-[4rem]">
               <h1>Title</h1>
               <h1>YYYY</h1>
             </span>
-            <span class="overflow-hidden rounded-[3rem] h-full w-full">
-              <img class="w-full transition duration-700 group-hover:scale-105 group-hover:brightness-50 h-full object-center object-cover" src="assets/image/DSC09725.jpg" alt=""/>
+            <span class="overflow-hidden rounded-xl h-full w-full">
+              <!-- <img class="w-full transition duration-700 group-hover:scale-105 group-hover:brightness-50 h-full object-center object-cover" src="assets/image/DSC09725.jpg" alt=""/> -->
+              <div class="w-full flex justify-center items-center transition duration-700 group-hover:scale-105 h-full object-center object-cover">
+                <h1 class="text-3xl">Project Picture</h1>
+              </div>
             </span>
           </div>
-          <div class="flex rounded-[3rem] overflow-hidden group transition duration-700 border-t-white border-t-[1px] flex-col relative max-md:w-full cursor-pointer w-full h-[30rem] bg-[#0a0a0a] group">
-            <span class="text-xl font-raleway font-light flex p-6 justify-between items-center w-full h-[4rem]">
+          <div class="flex rounded-3xl overflow-hidden group transition duration-700 border-t-white border-t-[1px] flex-col relative max-md:w-full cursor-pointer w-full h-[30rem] max-lg:h-[20rem] bg-[#0a0a0a] group">
+            <span class="text-xl font-raleway font-light flex p-6 justify-between items-center w-full max-lg:h-7 h-[4rem]">
               <h1>Title</h1>
               <h1>YYYY</h1>
             </span>
-            <span class="overflow-hidden rounded-[3rem] h-full w-full">
-              <img class="w-full transition duration-700 group-hover:scale-105 group-hover:brightness-50 h-full object-center object-cover" src="assets/image/DSC09725.jpg" alt=""/>
+            <span class="overflow-hidden rounded-xl h-full w-full">
+              <!-- <img class="w-full transition duration-700 group-hover:scale-105 group-hover:brightness-50 h-full object-center object-cover" src="assets/image/DSC09725.jpg" alt=""/> -->
+              <div class="w-full flex justify-center items-center transition duration-700 group-hover:scale-105 h-full object-center object-cover">
+                <h1 class="text-3xl">Project Picture</h1>
+              </div>
             </span>
           </div>
-          <div class="flex rounded-[3rem] overflow-hidden group transition duration-700 border-t-white border-t-[1px] flex-col relative max-md:w-full cursor-pointer w-full h-[30rem] bg-[#0a0a0a] group">
-            <span class="text-xl font-raleway font-light flex p-6 justify-between items-center w-full h-[4rem]">
+          <div class="flex rounded-3xl overflow-hidden group transition duration-700 border-t-white border-t-[1px] flex-col relative max-md:w-full cursor-pointer w-full h-[30rem] max-lg:h-[20rem] bg-[#0a0a0a] group">
+            <span class="text-xl font-raleway font-light flex p-6 justify-between items-center w-full max-lg:h-7 h-[4rem]">
               <h1>Title</h1>
               <h1>YYYY</h1>
             </span>
-            <span class="overflow-hidden rounded-[3rem] h-full w-full">
-              <img class="w-full transition duration-700 group-hover:scale-105 group-hover:brightness-50 h-full object-center object-cover" src="assets/image/DSC09725.jpg" alt=""/>
+            <span class="overflow-hidden rounded-xl h-full w-full">
+              <!-- <img class="w-full transition duration-700 group-hover:scale-105 group-hover:brightness-50 h-full object-center object-cover" src="assets/image/DSC09725.jpg" alt=""/> -->
+              <div class="w-full flex justify-center items-center transition duration-700 group-hover:scale-105 h-full object-center object-cover">
+                <h1 class="text-3xl">Project Picture</h1>
+              </div>
             </span>
           </div>
-          <div class="flex rounded-[3rem] overflow-hidden group transition duration-700 border-t-white border-t-[1px] flex-col relative max-md:w-full cursor-pointer w-full h-[30rem] bg-[#0a0a0a] group">
-            <span class="text-xl font-raleway font-light flex p-6 justify-between items-center w-full h-[4rem]">
+          <div class="flex rounded-3xl overflow-hidden group transition duration-700 border-t-white border-t-[1px] flex-col relative max-md:w-full cursor-pointer w-full h-[30rem] max-lg:h-[20rem] bg-[#0a0a0a] group">
+            <span class="text-xl font-raleway font-light flex p-6 justify-between items-center w-full max-lg:h-7 h-[4rem]">
               <h1>Title</h1>
               <h1>YYYY</h1>
             </span>
-            <span class="overflow-hidden rounded-[3rem] h-full w-full">
-              <img class="w-full transition duration-700 group-hover:scale-105 group-hover:brightness-50 h-full object-center object-cover" src="assets/image/DSC09725.jpg" alt=""/>
+            <span class="overflow-hidden rounded-xl h-full w-full">
+              <!-- <img class="w-full transition duration-700 group-hover:scale-105 group-hover:brightness-50 h-full object-center object-cover" src="assets/image/DSC09725.jpg" alt=""/> -->
+              <div class="w-full flex justify-center items-center transition duration-700 group-hover:scale-105 h-full object-center object-cover">
+                <h1 class="text-3xl">Project Picture</h1>
+              </div>
             </span>
           </div>
-          <div class="flex rounded-[3rem] overflow-hidden group transition duration-700 border-t-white border-t-[1px] flex-col relative max-md:w-full cursor-pointer w-full h-[30rem] bg-[#0a0a0a] group">
-            <span class="text-xl font-raleway font-light flex p-6 justify-between items-center w-full h-[4rem]">
+          <div class="flex rounded-3xl overflow-hidden group transition duration-700 border-t-white border-t-[1px] flex-col relative max-md:w-full cursor-pointer w-full h-[30rem] max-lg:h-[20rem] bg-[#0a0a0a] group">
+            <span class="text-xl font-raleway font-light flex p-6 justify-between items-center w-full max-lg:h-7 h-[4rem]">
               <h1>Title</h1>
               <h1>YYYY</h1>
             </span>
-            <span class="overflow-hidden rounded-[3rem] h-full w-full">
-              <img class="w-full transition duration-700 group-hover:scale-105 group-hover:brightness-50 h-full object-center object-cover" src="assets/image/DSC09725.jpg" alt=""/>
+            <span class="overflow-hidden rounded-xl h-full w-full">
+              <!-- <img class="w-full transition duration-700 group-hover:scale-105 group-hover:brightness-50 h-full object-center object-cover" src="assets/image/DSC09725.jpg" alt=""/> -->
+              <div class="w-full flex justify-center items-center transition duration-700 group-hover:scale-105 h-full object-center object-cover">
+                <h1 class="text-3xl">Project Picture</h1>
+              </div>
             </span>
           </div>
         </div>
@@ -284,7 +281,7 @@
     </section>
 
     <section id="blog" class="blog bg-fixed text-white bg-gradient-to-b from-[#020202] to-[#0a0a0a] max-lg:h-max max-lg:max-h-max transition duration-1000 flex justify-center items-center container w-full h-screen max-w-full max-h-screen">
-      <main class="flex w-full h-full flex-col justify-center items-center p-10">
+      <main class="flex w-full h-full flex-col justify-center items-center p-5">
         <div class="flex flex-col justify-center items-center p-4 max-w-full max-h-screen">
           <h1 class="text-2xl font-bold uppercase">Recent Posts</h1>
         </div>
@@ -303,7 +300,7 @@
               repellendus, tempora alias dolorum, quas numquam consequuntur
               sint. Eligendi, omnis explicabo.
             </p>
-            <button class="bg-[#0a0a0a] border-[1px] border-white w-32 h-9 rounded-xl text-white hover:bg-hero hover:opacity-80 my-4">See More</button>
+            <button class="bg-[#0a0a0a] border-[1px] border-white w-32 h-9 rounded-xl text-white hover:opacity-80 my-4">See More</button>
           </div>
           <div class="box-blog group hover:scale-105 bg-[#0a0a0a] max-lg:w-full max-lg:h-full transition duration-1000 flex flex-col shadow-xl rounded-t-xl p-5 items-center w-72 h-fit border-t-[1px] border-t-white">
             <h1 class="font-bold text-xl self-start hover:underline">
@@ -319,7 +316,7 @@
               repellendus, tempora alias dolorum, quas numquam consequuntur
               sint. Eligendi, omnis explicabo.
             </p>
-            <button class="bg-[#0a0a0a] border-[1px] border-white w-32 h-9 rounded-xl text-white hover:bg-hero hover:opacity-80 my-4">See More</button>
+            <button class="bg-[#0a0a0a] border-[1px] border-white w-32 h-9 rounded-xl text-white hover:opacity-80 my-4">See More</button>
           </div>
           <div class="box-blog group hover:scale-105 bg-[#0a0a0a] max-lg:w-full max-lg:h-full transition duration-1000 flex flex-col shadow-xl rounded-t-xl p-5 items-center w-72 h-fit border-t-[1px] border-t-white">
             <h1 class="font-bold text-xl self-start hover:underline">
@@ -335,14 +332,14 @@
               repellendus, tempora alias dolorum, quas numquam consequuntur
               sint. Eligendi, omnis explicabo.
             </p>
-            <button class="bg-[#0a0a0a] border-[1px] border-white w-32 h-9 rounded-xl text-white hover:bg-hero hover:opacity-80 my-4">See More</button>
+            <button class="bg-[#0a0a0a] border-[1px] border-white w-32 h-9 rounded-xl text-white hover:opacity-80 my-4">See More</button>
           </div>
         </div>
       </main>
     </section>
 
-    <section>
-      <main class="flex p-5 max-lg:h-fit max-lg:max-h-max max-lg:flex-wrap max-lg:justify-around max-lg:items-center gap-5 font-raleway text-white w-full h-screen bg-gradient-to-b from-[#020202] to-[#0a0a0a]">
+    <section id="contact">
+      <main class="flex p-5 max-lg:h-fit max-lg:max-h-max max-lg:flex-wrap max-lg:justify-around max-lg:items-center gap-5 font-raleway text-white w-full h-fit bg-gradient-to-b from-[#020202] to-[#0a0a0a]">
         <a class="max-lg:order-1 max-lg:w-[48%] max-md:w-[45.2%] max-lg:h-fit" href="https://www.linkedin.com/in/vunky-himawan">
           <div class="flex flex-col max-lg:w-full group w-[15rem] justify-between rounded-3xl p-5 h-[15rem] border-[1px] border-white">
             <div class="flex group-hover:bg-white group-hover:text-black group-hover:font-bold transition duration-700 justify-center items-center text-lg w-10 h-10 text-center rounded-full border-white border-[1px]">
@@ -376,7 +373,7 @@
             </div>
             <div class="w-full h-50 flex flex-col items-center my-4">
               <input type="email" placeholder="Message*" class="p-4 bg-[#020202] border-[1px] border-white max-lg:w-full w-[41rem] mb-5 h-32 rounded-xl">
-              <button class="border-white border-[1px] w-[8rem] rounded-2xl group flex justify-between p-3 hover:bg-white hover:text-black transition duration-500 hover:font-bold btn overflow-hidden">Submit <i class="fly group-hover:rotate-180 transition duration-1000" data-feather="send"></i></button>
+              <button class="border-white border-[1px] w-[8rem] rounded-2xl group flex justify-between p-3 hover:bg-white hover:text-black transition duration-500 hover:font-bold btn overflow-hidden">Submit<i class="fly group-hover:rotate-180 transition duration-1000" data-feather="send"></i></button>
             </div>
           </div>
         </div>
